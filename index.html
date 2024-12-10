@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    
+
+<div class="box">
+    <h1>BMI Calculator</h1>
+
+    <div class="ip b1">
+        <label  for="height">Height:</label>
+    
+        <input class="ip" type="number" id="height" placeholder="Height(in cm)">
+    </div>
+
+    <div class="ip b2">
+        <label  for="height">Weight:</label>
+     
+        <input class="ip" type="number" id="weight" placeholder="weight(in Kg)">
+    </div>
+
+
+  <div class="buttons">
+        <button onclick="calculate()" type="button" class="button"> Calculate </button>
+    
+        <button onclick="clear_output()" type="button" class="button">Clear</button>
+  </div>
+
+
+
+
+    <div id="result"></div>
+</div> 
+  
+<div id="bar">
+    <div id="level"></div>
+</div>
+<div class="wclass">
+    <h4>Obese(>40)</h4>
+    <h4>Overweight(25.0 - 39.9)</h4>
+    <h4>Normal (18.5 - 24.9) </h4>
+    <!-- <h4>Underweight ( < 18.5) </h4> -->
+     <h4>Normal( < 189.5) </h4>
+</div>
+<!-- </div> -->
+</body>
+<script src="./script.js"></script>
+</html>
