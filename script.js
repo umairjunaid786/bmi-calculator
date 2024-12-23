@@ -1,4 +1,4 @@
-function calculateBMI() {
+function calculate() {
     const height = document.getElementById('height').value;
     const weight = document.getElementById('weight').value;
     const result = document.getElementById('result');
@@ -14,13 +14,24 @@ function calculateBMI() {
     let category = '';
 
     if (bmi < 18.5) {
-        category = 'Underweight';
+      
+        result.style.color='blue'
+        category="Under Weight"
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        category = 'Normal weight';
-    } else if (bmi >= 25 && bmi < 29.9) {
-        category = 'Overweight';
+      
+        category="Healthy"
+        result.style.color='green'
+    
+    } else if (bmi >= 25 && bmi < 39.9) {
+        
+        result.style.color='orange'
+        category="Over Weight"
+    
     } else {
-        category = 'Obesity';
+      
+        result.style.color='red'
+        category="Obese"
+    
     }
 
     result.textContent = `Your BMI is ${bmi} (${category})`;
